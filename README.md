@@ -9,7 +9,7 @@ JavaScript library for converting text to translit
 ## Simple to use
 
 ```
-import {translit} from 'translit-en'
+import translit from 'translit-en'
 
 
 console.log(translit("Բարև , Здравствуйте")); // barev , zdravstvuyte

@@ -90,4 +90,4 @@ function translit(value) {
     return translitText
 }
 
-module.exports.translit = translit
+export default translit
