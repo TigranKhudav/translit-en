@@ -15,3 +15,10 @@ import translit from 'translit-en'
 console.log(translit("Բարև , Здравствуйте")); // barev , zdravstvuyte
 
 ```
+
+## Supported languages
+
+Still supporting languages
+
+`Armenian`
+`Russian`
