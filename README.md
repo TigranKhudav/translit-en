@@ -11,7 +11,6 @@ JavaScript library for converting text to translit
 ```
 import {translit} from 'translit-en'
 
-translit( *String* )
 
 console.log(translit("Բարև , Здравствуйте")); // barev , zdravstvuyte
 
