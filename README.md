@@ -10,10 +10,10 @@ JavaScript library for converting text to translit
 
 >  translit("string","lang"), Default Armenian and Russian
 
-- `lang`
+> `lang`
 
-`"uk"` -- Ukrainian;
-`"bul"` -- Bulgarian;
+- `"uk"` -- Ukrainian;
+- `"bul"` -- Bulgarian;
 
 ```
 import translit from 'translit-en'
