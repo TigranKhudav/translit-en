@@ -11,7 +11,12 @@ JavaScript library for converting text to translit
 ```
 import translit from 'translit-en'
 
-// translit("String","lang"), Default Armenian and Russian
+> translit("String","lang"), Default Armenian and Russian
+
+- `lang`
+`"uk"` -- Ukrainian
+`"bul"` -- Bulgarian
+
 
 console.log(translit("Բարև , Здравствуйте")); // barev , zdravstvuyte
 
@@ -26,3 +31,4 @@ Still supporting languages
 `Armenian`
 `Russian`
 `Ukrainian`
+`Bulgarian`

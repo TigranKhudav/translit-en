@@ -1,4 +1,4 @@
-export default {
+let obj = {
     arm: {
         "ա": "a",
         "բ": "b",
@@ -43,27 +43,40 @@ export default {
     russian: {
         "г": "g",
         "и": "i",
-        "ъ": "",
         "ы": "y",
         "э": "e",
+        "х": "kh",
+        "ъ": "",
     },
     ukrainian: {
         "г": "h",
         "ґ": "g",
-        "е": "e",
         "и": "y",
         "і": "i",
+        "ї": "yi",
         "є": "ye",
+        "щ": "shch",
+        "х": "kh",
+        "ъ": "",
         "'": "",
         "’": "",
         "ʼ": "",
+    },
+    bulgarian: {
+        "г": "g",
+        "и": "i",
+        "щ": "sht",
+        "ъ": "u",
+        "х": "h",
     },
     ciril: {
         "а": "a",
         "б": "b",
         "в": "v",
         "д": "d",
+        "ж": "zh",
         "з": "z",
+        "е": "e",
         "й": "y",
         "к": "k",
         "л": "l",
@@ -76,6 +89,32 @@ export default {
         "т": "t",
         "у": "u",
         "ф": "f",
-        "ь": ""
+        "ч": "ch",
+        "ц": "ts",
+        "ш": "sh",
+        "ь": "",
+        "ю": "yu",
+        "я": "ya",
+
     }
 }
+
+const arm = obj.arm
+const ciril = obj.ciril
+const russian = obj.russian
+const ukrainian = obj.ukrainian
+const bulgarian = obj.bulgarian
+
+const ru = {
+    ...ciril,
+    ...russian
+}
+const bul = {
+    ...ciril,
+    ...bulgarian
+}
+const uk = {
+    ...ciril,
+    ...ukrainian
+}
+export default { arm, ru, bul, uk }

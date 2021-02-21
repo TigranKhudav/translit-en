@@ -1,19 +1,11 @@
 import lang from './languages.js'
 
 const arm = lang.arm
-const ciril = lang.ciril
-const russian = lang.russian
-const ukrainian = lang.ukrainian
+const ru = lang.ru
+const uk = lang.uk
+const bul = lang.bul
 
-const ru = {
-    ...ciril,
-    ...russian
-}
-const uk = {
-    ...ciril,
-    ...ukrainian
-}
-const SupLanArray = ["uk"]
+const SupLanObj = { "uk": uk, "bul": bul }
 
 function translit(value, opt) {
     let translitText = ""
@@ -28,13 +20,13 @@ function translit(value, opt) {
             else translitText += i
         }
     } else {
-        if (SupLanArray.includes(opt)) {
+        if (opt in SupLanObj) {
+            let lanObj = SupLanObj[opt]
             for (let i of arr) {
-                (uk[i] !== undefined) ? translitText += uk[i] : translitText += i
+                (lanObj[i] !== undefined) ? translitText += lanObj[i] : translitText += i
             }
         } else translitText = "this language not supported!";
     }
-
     return translitText
 }
 
