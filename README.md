@@ -8,15 +8,15 @@ JavaScript library for converting text to translit
 
 ## Simple to use
 
-```
-import translit from 'translit-en'
-
 > translit("String","lang"), Default Armenian and Russian
 
 - `lang`
+
 `"uk"` -- Ukrainian
 `"bul"` -- Bulgarian
 
+```
+import translit from 'translit-en'
 
 console.log(translit("Բարև , Здравствуйте")); // barev , zdravstvuyte
 
