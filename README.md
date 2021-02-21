@@ -8,12 +8,12 @@ JavaScript library for converting text to translit
 
 ## Simple to use
 
-> translit("String","lang"), Default Armenian and Russian
+>  translit("string","lang"), Default Armenian and Russian
 
 - `lang`
 
-`"uk"` -- Ukrainian
-`"bul"` -- Bulgarian
+`"uk"` -- Ukrainian;
+`"bul"` -- Bulgarian;
 
 ```
 import translit from 'translit-en'
