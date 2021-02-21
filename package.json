@@ -1,6 +1,6 @@
 {
   "name": "translit-en",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JavaScript library for converting text to translit",
   "main": "index.js",
   "type": "module",
