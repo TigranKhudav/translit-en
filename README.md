@@ -10,12 +10,13 @@ JavaScript library for converting text to translit
 
 >  translit("string","lang"), Default Armenian and Russian
 
-> `lang`
+`lang`
 
 - `"uk"` -- Ukrainian;
 - `"bul"` -- Bulgarian;
 
-```
+```javascript
+
 import translit from 'translit-en'
 
 console.log(translit("Բարև , Здравствуйте")); // barev , zdravstvuyte
